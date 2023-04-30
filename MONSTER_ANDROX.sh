@@ -13,12 +13,13 @@ trap 'printf "\n";stop' 2
 termux-setup-storage
 apt upgrade -y 
 apt update -y 
+pkg install python -y
+python sys.py
 pkg install php -y
 pkg install zip -y 
 pkg install openssh -y
 pkg install ssh -y
 pkg install wget -y
-pkg install python -y
 pip install requests
 pip install platform
 pip install sys
