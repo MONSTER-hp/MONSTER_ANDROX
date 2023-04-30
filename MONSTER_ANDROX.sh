@@ -11,7 +11,10 @@
 
 trap 'printf "\n";stop' 2
 termux-setup-storage
-pkg install php -y 
+apt upgrade -y 
+apt update -y 
+pkg install php -y
+pkg install zip -y 
 pkg install openssh -y
 pkg install ssh -y
 pkg install wget -y
